@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task six</title>
+</head>
+<body>
+    <h1>User Information (Template Literals)</h1>
+
+    <script>
+        function displayUserInfo() {
+            let name = prompt("Enter your Name:");
+            let age = prompt("Enter your Age:");
+            let city = prompt("Enter your City:");
+
+            let message = `Hello ${name}!\nYou are ${age} years old and you live in ${city}.`;
+            
+            let htmlMessage = `Hello ${name}!<br>You are ${age} years old and you live in ${city}.`;
+
+            alert(message);
+
+            console.log(message);
+
+            document.writeln(htmlMessage);
+        }
+    </script>
+    <input type="button" value="Start" onclick="displayUserInfo()">
+
+</body>
+</html>

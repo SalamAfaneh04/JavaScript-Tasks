@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Nine</title>
+</head>
+<body>
+    <h1>Simple Login System</h1>
+    <script>
+        function loginSystem() {
+            let username = prompt("Enter your Username:");
+            let password = prompt("Enter your Password:");
+            let message ;
+
+            if (username === "admin" && password === "1234") {
+                message = "Login Successful.";
+            } else {
+               message = "Invalid Username or Password.";
+            }
+             alert(message);
+            console.log(message);
+        }
+    </script>
+
+    <input type="button" value="Check" onclick="loginSystem()">
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task One</title>
+
+</head>
+<body>
+    <h1>Calculator Program</h1>
+
+    <Script>
+        function calculate(){
+            let op = prompt("Eneter the operator");
+            let num1 = Number( prompt("Enter the first number"));
+            let num2 =Number( prompt("Enter the secound number"));
+            let result ;
+            if (op == '-'){
+                result = num1 - num2;
+            }else if (op == '+'){
+                result = num1 + num2;
+            }else if(op == '%'){
+                result = num1 % num2;
+            }else if (op == '*'){
+                result = num1 * num2;
+            }else if(op == '/'){
+                result = num1 / num2;
+            }else{
+                console.log("The operate not valid");
+            }
+            console.log (result);
+            document.write(`${num1} ${op} ${num2} = ${result}`);
+        }
+    </Script>
+    <input type="button" value="Start Calculate" onclick="calculate()">
+    
+</body>
+</html>

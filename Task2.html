@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Two</title>
+</head>
+<body>
+    <h1>Marks Program</h1>
+    <script>
+        function getGrade() {
+            let mark = Number(prompt("Enter the mark (0-100):"));
+
+            let grade;
+
+            if (mark >= 90 && mark <= 100) {
+                grade = "A+";
+            } else if (mark >= 80) {
+                grade = "A";
+            } else if (mark >= 70) {
+                grade = "B";
+            } else if (mark >= 60) {
+                grade = "C";
+            } else if (mark >= 50) {
+                grade = "D";
+            } else if (mark < 50 && mark >= 0) {
+                grade = "FAIL";
+            } else {
+                grade = "Invalid Mark";
+            }
+
+            document.write(`Mark: ${mark} | Grade: ${grade}`);
+        }
+    </script>
+
+    <input type="button" value="Check Your Grade" onclick="getGrade()">
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Three</title>
+</head>
+<body>
+    <h1>Using π Constant</h1>
+
+    <script>
+        function calculateCircle() {
+            const PI = 3.14159; 
+            
+            let radius = Number(prompt("Enter the radius of the circle:"));
+
+            let area = PI * (radius ** 2); 
+            
+            let circumference = 2 * PI * radius;
+
+            console.log(`Radius: ${radius}`);
+            console.log(`The Area of the circle is: ${area.toFixed(2)}`);
+            console.log(`The Circumference of the circle is: ${circumference.toFixed(2)}`);
+        }
+
+    </script>
+    <input type="button" value="Start" onclick="calculateCircle()">
+</body>
+</html>

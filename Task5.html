@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task five</title>
+</head>
+<body>
+    <h1>Type Conversion</h1>
+
+    <script>
+        function calculateOperations() {
+            let num1 = Number(prompt("Enter the first number:"));
+            let num2 = Number(prompt("Enter the second number:"));
+
+            let sum = num1 + num2;
+            let product = num1 * num2;
+
+            let sumResult = `Sum = ${sum}`;
+            let multiResult = `Multiplication =  ${product}`;
+
+            console.log(sumResult);
+            console.log(multiResult);
+
+            document.write(sumResult + "<br>");
+            document.write(multiResult);
+        }   
+    </script>
+
+    <input type="button" value="Convert" onclick="calculateOperations()">
+
+</body>
+</html>

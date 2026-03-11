@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 8</title>
+</head>
+<body>
+    <h1>Age Category</h1>
+
+    <script>
+        function categorizeAge() {
+            let age = Number(prompt("Please enter your age:"));
+
+            let category;
+
+            if (age < 0 || isNaN(age)) {
+                category = "Invalid input";
+            } else if (age < 13) {
+                category = "Child";
+            } else if (age <= 19) {
+                category = "Teenager";
+            } else if (age <= 59) {
+                category = "Adult";
+            } else {
+                category = "Senior";
+            }
+
+            let message = `Your are an  ${category}`;
+            
+            alert(message);
+            console.log(message);
+        }
+
+    </script>
+    <input type="button" value="Check Type" onclick="categorizeAge()">
+
+</body>
+</html>

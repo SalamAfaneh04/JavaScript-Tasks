@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task seven</title>
+</head>
+<body>
+    <h1>Even or Odd Number</h1>
+
+    <script>
+        function checkEvenOrOdd() {
+            let num = Number(prompt("Enter a number:"));
+
+            if (num % 2 === 0) {
+                alert(`The number ${num} is Even`);
+            } else if (isNaN(num)) {
+                alert("That is not a valid number.");
+            } else {
+                alert(`The number ${num} is Odd`);
+            }
+        }
+
+    </script>
+
+    <input type="button" value="Check Even Or odd" onclick="checkEvenOrOdd()">
+
+</body>
+</html>
