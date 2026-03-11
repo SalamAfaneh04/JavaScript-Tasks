@@ -9,27 +9,17 @@
     <h1>Simple Condition</h1>
     <script>
         function check (){
-            // 1. Get user input
             let x = Number(prompt("Enter the value for x:"));
             let y = Number(prompt("Enter the value for y:"));
             let message;
 
-            // 2. The If Statement Logic
             if (x > y) {
                 message = "Hello World";
             } else {
                 message = "Goodbye";
             }
-
-            // 3. Display the results in three ways:
-            
-            // A. Alert box
             alert(message);
-
-            // B. Browser Console
             console.log(message);
-
-            // C. Directly on the HTML page
             document.writeln(message) ;
         }
     </script>
